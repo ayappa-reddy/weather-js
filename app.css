@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: lightskyblue;
+  line-height: 1.6;
+  background-color: lightskyblue;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 5rem auto;
+  background-color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.w-location {
+  font-size: 2rem;
+}
+
+.w-desc,
+.w-temp {
+  font-size: 1.6rem;
+}
+
+.w-info-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.w-icon {
+  margin: 1rem 0;
+}
+
+.w-info-item {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border: 1px solid lightblue;
+}
+
+.w-info-item:not(:last-child) {
+  border-bottom: none;
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+
+.modal-btn-box {
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.city-label,
+.state-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.city,
+.state {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgb(180, 221, 246);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: #4582ec;
+  transition: all 0.2s;
+}
+
+.city:focus,
+.state:focus {
+  box-shadow: 0 0 0 3pt rgba(69, 130, 236, 0.3);
+  outline: none;
+}
+
+.city-box {
+  margin-bottom: 1rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background-color: lightskyblue;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(53, 172, 246);
+}
+
+.close-btn,
+.submit-btn {
+  /* text-align: center; */
+}
+
+.error {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(241, 95, 42);
+}

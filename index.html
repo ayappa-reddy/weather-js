@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.css">
+  <title>WeatherJS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="w-location"></h3>
+    <h3 class="w-desc"></h3>
+    <h3 class="w-temp"></h3>
+    <img class="w-icon" alt="Weather icon" />
+
+    <ul class="w-info-list">
+      <li class="w-info-item w-humidity"></li>
+      <li class="w-info-item w-dewpoint"></li>
+      <li class="w-info-item w-feelslike"></li>
+      <li class="w-info-item w-wind"></li>
+    </ul>
+
+    <a href="#modal" class="change-loction btn">
+      Change Location
+    </a>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="city-box">
+          <label class="city-label" for="city">City:</label>
+          <input type="text" name="city" id="city" class="city">
+        </div>
+        <div class="state-box">
+          <label class="state-label" for="state">State/Country:</label>
+          <input type="text" name="state" id="state" class="state">
+        </div>
+        <div class="modal-btn-box">
+          <a href="#" class="close-btn btn">Close</a>
+          <a class="submit-btn btn">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="keys.js"></script>
+  <script src="storage.js"></script>
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
