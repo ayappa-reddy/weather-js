@@ -135,11 +135,6 @@ body {
   background-color: rgb(53, 172, 246);
 }
 
-.close-btn,
-.submit-btn {
-  /* text-align: center; */
-}
-
 .error {
   font-size: 1.6rem;
   font-weight: 600;
